@@ -1,19 +1,26 @@
 {
     "skills": {
-        "Working Experience": [
-            "Time Management",
-            "Cross-Cultural Communication Skills",
+        "Professional Skills": [
             "Staff Scheduling",
             "Data Analysis",
+            "Statistical Data Analysis",
+            "Mathematical Modeling",
             "Lead Generation",
             "Salesforce CRM",
             "Quality Assurance Testing",
             "Market Research"
+
         ],
-        "Education and Self-Improvement": [
+        "Soft Skills": [
+            "Time Management",
+            "Cross-Cultural Communication Skills",
             "Problem Solving",
-            "Statistical Data Analysis",
-            "Mathematical Modeling"
+            "Adaptability",
+            "Critical Thinking",
+            "Team Collaboration",
+            "Attention to Detail",
+            "Verbal and Written Communication",
+            "Initiative and Self-Motivation"
         ]
     }
 }
