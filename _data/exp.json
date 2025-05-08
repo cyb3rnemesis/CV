@@ -7,7 +7,11 @@
         "details": [
             {
                 "title": "Business Development and Data Analysis",
-                "description": "Researched and analyzed thousands of companies to identify ideal customer profile (ICP) matches for targeted outreach strategies. Performed manual QA testing to verify website functionality and ensure optimal user experience. Utilized Salesforce CRM and other business intelligence tools to manage prospect data and track client engagement."
+                "description": "Researched and analyzed thousands of companies to identify ideal customer profile (ICP) matches for targeted outreach strategies. Utilized Salesforce CRM and other business intelligence tools to manage prospect data and track client engagement."
+            },
+            {
+                "title": "Quality Assurance (QA)",
+                "description": "Performed manual QA testing to verify website functionality and ensure optimal user experience. Collaborated with developers to identify and resolve issues."
             },
             {
                 "title": "Collaboration and Process Improvement",

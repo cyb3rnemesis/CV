@@ -18,7 +18,7 @@ title: Aleksandre Giorgadze
   </head>
 
   <body>
-    <div class="columns" style="padding-top:20px">
+    <div class="columns" style="padding-top:40px"> <!-- Increased padding-top from 20px to 40px -->
       <div class="column is-8 is-offset-2">
 
         <!-- Header Section -->
@@ -117,6 +117,16 @@ title: Aleksandre Giorgadze
               {{ language.language }}
             {% endfor %}
           </p>
+        </div>
+
+        <!-- Languages Section -->
+        <div class="content">
+          <span class="heading"><h3>Languages</h3></span>
+          <ul style="font-size: 0.8rem; list-style-type: circle;">
+            {% for language in personalData.languages %}
+              <li><strong>{{ language.language }}:</strong> {{ language.level }}</li>
+            {% endfor %}
+          </ul>
         </div>
 
         <!-- Download Button at the End -->
