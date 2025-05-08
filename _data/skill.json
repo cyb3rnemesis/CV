@@ -1,21 +1,19 @@
 {
     "skills": {
-        "Evolution": [
+        "Working Experience": [
             "Time Management",
             "Cross-Cultural Communication Skills",
-            "Staff Scheduling"
-        ],
-        "University": [
-            "Problem Solving",
-            "Statistical Data Analysis",
-            "Mathematical Modeling"
-        ],
-        "Scandiweb": [
+            "Staff Scheduling",
             "Data Analysis",
             "Lead Generation",
             "Salesforce CRM",
             "Quality Assurance Testing",
             "Market Research"
+        ],
+        "Education and Self-Improvement": [
+            "Problem Solving",
+            "Statistical Data Analysis",
+            "Mathematical Modeling"
         ]
     }
 }
