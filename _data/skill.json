@@ -1,0 +1,21 @@
+{
+    "skills": {
+        "Evolution": [
+            "Time Management",
+            "Cross-Cultural Communication Skills",
+            "Staff Scheduling"
+        ],
+        "University": [
+            "Problem Solving",
+            "Statistical Data Analysis",
+            "Mathematical Modeling"
+        ],
+        "Scandiweb": [
+            "Data Analysis",
+            "Lead Generation",
+            "Salesforce CRM",
+            "Quality Assurance Testing",
+            "Market Research"
+        ]
+    }
+}

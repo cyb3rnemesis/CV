@@ -2,6 +2,8 @@
 title: Aleksandre Giorgadze
 ---
 {% assign personalData = site.data.personal[0] %}
+{% assign aboutMe = site.data.aboutme.about %}
+{% assign skills = site.data.skill.skills %}
 <!DOCTYPE html>
 <html>
   <head>
@@ -21,12 +23,9 @@ title: Aleksandre Giorgadze
         <!-- About Me Section -->
         <div class="content">
           <span class="heading"><h3>About Me</h3></span>
-          <p>
-            A detail-oriented professional with a background bridging physics and computer science, I bring analytical thinking to every challenge. After managing complex scheduling operations, I deliberately transitioned my career path through self-directed learning in computer science.
-          </p>
-          <p>
-            My experience includes business development through data research and analysis, identifying ideal customer profiles while performing technical QA testing. Working in international environments has enhanced my communication skills and adaptability, while strengthening my attention to detail and systematic problem-solving approach.
-          </p>
+          {% for paragraph in aboutMe %}
+            <p>{{ paragraph }}</p>
+          {% endfor %}
         </div>
 
         <!-- Experience Section -->
@@ -61,9 +60,9 @@ title: Aleksandre Giorgadze
         <div class="content">
           <span class="heading"><h3>Skills</h3></span>
           <ul style="font-size: 0.8rem; list-style-type: circle;">
-            <li><strong>From Evolution:</strong> Time Management, Cross-Cultural Communication Skills, Staff Scheduling</li>
-            <li><strong>From University:</strong> Problem Solving, Statistical Data Analysis, Mathematical Modeling</li>
-            <li><strong>From Scandiweb:</strong> Data Analysis, Lead Generation, Salesforce CRM, Quality Assurance Testing, Market Research</li>
+            <li><strong>From Evolution:</strong> {{ skills.Evolution | join: ", " }}</li>
+            <li><strong>From University:</strong> {{ skills.University | join: ", " }}</li>
+            <li><strong>From Scandiweb:</strong> {{ skills.Scandiweb | join: ", " }}</li>
           </ul>
         </div>
 
