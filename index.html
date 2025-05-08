@@ -24,12 +24,6 @@ title: Aleksandre Giorgadze
         <div class="content has-text-centered">
           <h1 class="title">{{ personalData.name }}</h1>
           <div class="buttons is-centered">
-            <!-- Email Button -->
-            <a href="mailto:{{ personalData.email }}" class="button is-light" target="_blank">
-              <span class="icon">
-                <i class="fa fa-envelope"></i>
-              </span>
-            </a>
             <!-- LinkedIn Button -->
             <a href="{{ personalData.linkedin }}" class="button is-light" target="_blank">
               <span class="icon">
@@ -42,6 +36,12 @@ title: Aleksandre Giorgadze
                 <i class="fa fa-github"></i>
               </span>
             </a>
+            <!-- Email Button -->
+            <a href="mailto:{{ personalData.email }}" class="button is-light" target="_blank">
+              <span class="icon">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </a>
           </div>
         </div>
 
@@ -49,7 +49,7 @@ title: Aleksandre Giorgadze
         <div class="content">
           <span class="heading"><h3>About Me</h3></span>
           {% for paragraph in aboutMe %}
-            <p>{{ paragraph }}</p>
+            <p style="font-size: 0.8rem; color: black;">{{ paragraph }}</p>
           {% endfor %}
         </div>
 
