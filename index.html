@@ -24,19 +24,22 @@ title: Aleksandre Giorgadze
         <div class="content has-text-centered">
           <h1 class="title">{{ personalData.name }}</h1>
           <div class="buttons is-centered">
-            <a href="{{ personalData.linkedin }}" class="button is-link" target="_blank">
+            <!-- Email Button -->
+            <a href="mailto:{{ personalData.email }}" class="button is-light" target="_blank">
+              <span class="icon">
+                <i class="fa fa-envelope"></i>
+              </span>
+            </a>
+            <!-- LinkedIn Button -->
+            <a href="{{ personalData.linkedin }}" class="button is-light" target="_blank">
               <span class="icon">
                 <i class="fa fa-linkedin"></i>
               </span>
             </a>
-            <a href="{{ personalData.github }}" class="button is-dark" target="_blank">
+            <!-- GitHub Button -->
+            <a href="{{ personalData.github }}" class="button is-light" target="_blank">
               <span class="icon">
                 <i class="fa fa-github"></i>
-              </span>
-            </a>
-            <a href="/assets/resume.pdf" class="button is-primary" download>
-              <span class="icon">
-                <i class="fa fa-download"></i>
               </span>
             </a>
           </div>
@@ -95,6 +98,15 @@ title: Aleksandre Giorgadze
               {{ language.language }}
             {% endfor %}
           </p>
+        </div>
+
+        <!-- Download Button at the End -->
+        <div class="content has-text-centered" style="margin-top: 20px;">
+          <a href="/assets/resume.pdf" class="button is-light" download>
+            <span class="icon">
+              <i class="fa fa-download"></i>
+            </span>
+          </a>
         </div>
 
       </div>
