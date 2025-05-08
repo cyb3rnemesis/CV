@@ -6,7 +6,13 @@
         "github":"https://github.com/cyb3rnemesis",
         "languages": [
             {
-                "language": "C"
+                "language": "Georgian",
+                "level": "Native",
+                "language": "English",
+                "level": "C1",
+                "language": "Russian",
+                "level": "A1"
+
             }
         ]
     }
