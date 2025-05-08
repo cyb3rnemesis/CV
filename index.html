@@ -76,9 +76,17 @@ title: Aleksandre Giorgadze
         <!-- Skills Section -->
         <div class="content">
           <span class="heading"><h3>Skills</h3></span>
+          <h4 style="font-size: 0.9rem; margin-top: 10px;">Professional Skills</h4>
           <ul style="font-size: 0.8rem; list-style-type: circle;">
-            <li>From Working Experience: {{ skills["Working Experience"] | join: ", " }}</li>
-            <li>From Education and Self-Improvement: {{ skills["Education and Self-Improvement"] | join: ", " }}</li>
+            {% for skill in skills["Professional Skills"] %}
+              <li>{{ skill }}</li>
+            {% endfor %}
+          </ul>
+          <h4 style="font-size: 0.9rem; margin-top: 10px;">Soft Skills</h4>
+          <ul style="font-size: 0.8rem; list-style-type: circle;">
+            {% for skill in skills["Soft Skills"] %}
+              <li>{{ skill }}</li>
+            {% endfor %}
           </ul>
         </div>
 
