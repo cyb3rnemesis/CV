@@ -73,31 +73,43 @@ title: Aleksandre Giorgadze
           {% endfor %}
         </div>
 
-        <!-- Skills Section -->
-        <div class="content">
-          <span class="heading"><h3>Skills</h3></span>
-          <h4 style="font-size: 0.9rem; margin-top: 10px;">Professional Skills</h4>
-          <ul style="font-size: 0.8rem; list-style-type: circle;">
-            {% for skill in skills["Professional Skills"] %}
-              <li>{{ skill }}</li>
-            {% endfor %}
-          </ul>
-          <h4 style="font-size: 0.9rem; margin-top: 10px;">Soft Skills</h4>
-          <ul style="font-size: 0.8rem; list-style-type: circle;">
-            {% for skill in skills["Soft Skills"] %}
-              <li>{{ skill }}</li>
-            {% endfor %}
-          </ul>
-        </div>
+        <!-- Skills and Languages Section -->
+        <div class="columns">
+          <!-- Professional Skills -->
+          <div class="column">
+            <div class="content">
+              <span class="heading"><h3>Professional Skills</h3></span>
+              <ul style="font-size: 0.8rem; list-style-type: circle;">
+                {% for skill in skills["Professional Skills"] %}
+                  <li>{{ skill }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
 
-        <!-- Languages Section -->
-        <div class="content">
-          <span class="heading"><h3>Languages</h3></span>
-          <ul style="font-size: 0.8rem; list-style-type: circle;">
-            {% for language in personalData.languages %}
-              <li>{{ language.language }}: {{ language.level }}</li>
-            {% endfor %}
-          </ul>
+          <!-- Soft Skills -->
+          <div class="column">
+            <div class="content">
+              <span class="heading"><h3>Soft Skills</h3></span>
+              <ul style="font-size: 0.8rem; list-style-type: circle;">
+                {% for skill in skills["Soft Skills"] %}
+                  <li>{{ skill }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+
+          <!-- Languages -->
+          <div class="column">
+            <div class="content">
+              <span class="heading"><h3>Languages</h3></span>
+              <ul style="font-size: 0.8rem; list-style-type: circle;">
+                {% for language in personalData.languages %}
+                  <li>{{ language.language }}: {{ language.level }}</li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
         </div>
 
         <!-- Projects Section -->
