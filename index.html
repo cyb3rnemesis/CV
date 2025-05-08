@@ -20,6 +20,31 @@ title: Aleksandre Giorgadze
     <div class="columns" style="padding-top:20px">
       <div class="column is-8 is-offset-2">
 
+        <!-- Header Section -->
+        <div class="content has-text-centered">
+          <h1 class="title">{{ personalData.name }}</h1>
+          <div class="buttons is-centered">
+            <a href="{{ personalData.linkedin }}" class="button is-link" target="_blank">
+              <span class="icon">
+                <i class="fa fa-linkedin"></i>
+              </span>
+              <span>LinkedIn</span>
+            </a>
+            <a href="{{ personalData.github }}" class="button is-dark" target="_blank">
+              <span class="icon">
+                <i class="fa fa-github"></i>
+              </span>
+              <span>GitHub</span>
+            </a>
+            <a href="/assets/resume.pdf" class="button is-primary" download>
+              <span class="icon">
+                <i class="fa fa-download"></i>
+              </span>
+              <span>Download PDF</span>
+            </a>
+          </div>
+        </div>
+
         <!-- About Me Section -->
         <div class="content">
           <span class="heading"><h3>About Me</h3></span>
