@@ -73,6 +73,16 @@ title: Aleksandre Giorgadze
           {% endfor %}
         </div>
 
+        <!-- Projects Section -->
+        <div class="content">
+          <span class="heading"><h3>Projects</h3></span>
+          {% for project in site.data.proj %}
+            <p class="heading is-marginless">{{ project.title }}</p>
+            <p style="font-size: 0.8rem; font-style: italic;">{{ project.time_period }}</p> <!-- Added time period -->
+            <p style="font-size: 0.8rem">{{ project.description }}</p>
+          {% endfor %}
+        </div>
+
         <!-- Skills and Languages Section -->
         <div class="columns">
           <!-- Professional Skills -->
@@ -110,15 +120,6 @@ title: Aleksandre Giorgadze
               </ul>
             </div>
           </div>
-        </div>
-
-        <!-- Projects Section -->
-        <div class="content">
-          <span class="heading"><h3>Projects</h3></span>
-          {% for project in site.data.proj %}
-            <p class="heading is-marginless">{{ project.title }}</p>
-            <p style="font-size: 0.8rem">{{ project.description }}</p>
-          {% endfor %}
         </div>
 
         <!-- Download Button at the End -->
