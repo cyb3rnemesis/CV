@@ -77,9 +77,11 @@ title: Aleksandre Giorgadze
         <div class="content">
           <span class="heading"><h3>Projects</h3></span>
           {% for project in site.data.proj %}
-            <p class="heading is-marginless">{{ project.title }}</p>
-            <p style="font-size: 0.8rem; font-style: italic;">{{ project.time_period }}</p> <!-- Added time period -->
-            <p style="font-size: 0.8rem">{{ project.description }}</p>
+            <div class="level is-marginless">
+              <p class="is-marginless">{{ project.title }}</p>
+              <p style="text-align: right; font-size: 0.8rem; font-style: italic;">{{ project.time_period }}</p>
+            </div>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;">{{ project.description }}</p>
           {% endfor %}
         </div>
 
