@@ -73,15 +73,6 @@ title: Aleksandre Giorgadze
           {% endfor %}
         </div>
 
-        <!-- Projects Section -->
-        <div class="content">
-          <span class="heading"><h3>Projects</h3></span>
-          {% for project in site.data.proj %}
-            <p class="heading is-marginless">{{ project.title }}</p>
-            <p style="font-size: 0.8rem">{{ project.description }}</p>
-          {% endfor %}
-        </div>
-
         <!-- Skills Section -->
         <div class="content">
           <span class="heading"><h3>Skills</h3></span>
@@ -89,16 +80,6 @@ title: Aleksandre Giorgadze
             <li><strong>From Working Experience:</strong> {{ skills["Working Experience"] | join: ", " }}</li>
             <li><strong>From Education and Self-Improvement:</strong> {{ skills["Education and Self-Improvement"] | join: ", " }}</li>
           </ul>
-        </div>
-
-        <!-- Programming Languages Section -->
-        <div class="content">
-          <span class="heading"><h3>Programming Languages</h3></span>
-          <p style="font-size: 0.8rem">
-            {% for language in personalData.languages %}
-              {{ language.language }}
-            {% endfor %}
-          </p>
         </div>
 
         <!-- Languages Section -->
@@ -109,6 +90,15 @@ title: Aleksandre Giorgadze
               <li><strong>{{ language.language }}:</strong> {{ language.level }}</li>
             {% endfor %}
           </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="content">
+          <span class="heading"><h3>Projects</h3></span>
+          {% for project in site.data.proj %}
+            <p class="heading is-marginless">{{ project.title }}</p>
+            <p style="font-size: 0.8rem">{{ project.description }}</p>
+          {% endfor %}
         </div>
 
         <!-- Download Button at the End -->
