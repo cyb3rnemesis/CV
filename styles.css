@@ -1,4 +1,4 @@
 .heading {
-  color: #333; /* Darker color */
-  font-weight: 700; /* Bolder font */
+  color: black; /* Set heading color to black */
+  font-weight: bold; /* Make headings bold */
 }
