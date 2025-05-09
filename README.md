@@ -1,9 +1,29 @@
-# pforpallav.github.io
+# Personal Website & Resume
 
-[![overleaf template](https://img.shields.io/badge/overleaf--template-use-green.svg?style=flat)](https://www.overleaf.com/articles/kumar-pallavs-one-page-resume/cqtggyfbyrdk)
+This repository contains my personal website and resume, forked from [pforpallav.github.io](https://github.com/pforpallav/pforpallav.github.io). The original template was created by Kumar Pallav.
 
-A json based resume webpage. Made to work with `jekyll` based `github-pages`. Same json sources can be used to render a pdf using `lualatex`.
+## Overview
+This website serves as my personal portfolio and online resume. It's built using:
+- HTML/CSS for the website structure
+- JSON for content management
 
-> On Windows, with latest [MikTex 2.9](https://miktex.org/download), you can compile the pdf by running `lualatex main.tex` in the command line.
+## Features
+- Clean, minimalist design
+- Responsive layout
+- Downloadable PDF resume
+- Easy content updates through JSON files
 
-You can use the sources here with [Overleaf](https://www.overleaf.com/articles/kumar-pallavs-one-page-resume/cqtggyfbyrdk) or ShareLatex. Make sure you use `lualatex` compiler.
+## Content Structure
+The website content is managed through JSON files in the `_data` directory:
+- `personal.json` - Contact information
+- `exp.json` - Work experience
+- `edu.json` - Education details
+- `proj.json` - Projects and volunteering
+- `skill.json` - Skills and competencies
+- `aboutme.json` - Intro 
+
+## Acknowledgments
+Special thanks to Kumar Pallav for the original template design and implementation.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
