@@ -79,6 +79,23 @@ title: Aleksandre Giorgadze
           {% endfor %}
         </div>
 
+        <!-- Education Section -->
+        <div class="content">
+          <span class="heading"><h3>Education</h3></span>
+          {% for education in site.data.edu %}
+            <div class="level is-marginless">
+              <p class="is-marginless">{{ education.school }}<br/>
+                <span class="content is-marginless" style="font-size: 0.8rem">{{ education.degree }}</span>
+              </p>
+              <p style="text-align: right; font-size: 0.8rem">
+                {{ education.school_location }}<br/>
+                <span class="content is-marginless">{{ education.time_period }}</span>
+              </p>
+            </div>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem;">{{ education.details }}</p>
+          {% endfor %}
+        </div>
+
         <!-- Projects Section -->
         <div class="content" style="margin-bottom: 40px;"> <!-- Increased margin-bottom -->
           <span class="heading"><h3>Projects</h3></span>
@@ -95,24 +112,24 @@ title: Aleksandre Giorgadze
 
         <!-- Skills and Languages Section -->
         <div class="columns">
-          <!-- Professional Skills -->
+          <!-- Soft Skills (moved to first position) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3>Professional Skills</h3></span>
+              <span class="heading"><h3>Soft Skills</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle;">
-                {% for skill in skills["Professional Skills"] %}
+                {% for skill in skills["Soft Skills"] %}
                   <li>{{ skill }}</li>
                 {% endfor %}
               </ul>
             </div>
           </div>
 
-          <!-- Soft Skills -->
+          <!-- Professional Skills (moved to second position) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3>Soft Skills</h3></span>
+              <span class="heading"><h3>Professional Skills</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle;">
-                {% for skill in skills["Soft Skills"] %}
+                {% for skill in skills["Professional Skills"] %}
                   <li>{{ skill }}</li>
                 {% endfor %}
               </ul>
