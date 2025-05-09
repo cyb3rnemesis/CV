@@ -23,11 +23,6 @@ title: ალექსანდრე გიორგაძე
             color: #2b2a2a;  /* Added this line */
         }
         
-        h1.title {
-            font-size: 1.8rem !important;
-            color: #161616 !important;
-        }
-        
         h2.subtitle {
             font-size: 1.2rem !important;
             font-weight: 700;
@@ -50,12 +45,12 @@ title: ალექსანდრე გიორგაძე
         }
 
         h2.title.georgian-caps {
-            font-family: 'Noto Sans Georgian', sans-serif;
+            font-family: 'Noto Sans Georgian', sans-serif !important;
             font-size: 1.8rem !important;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
+            text-transform: uppercase !important;
+            letter-spacing: 0.05em !important;
             color: #616161 !important;
-            font-weight: 700;
+            font-weight: 700 !important;
         }
     </style>
 
@@ -68,7 +63,7 @@ title: ალექსანდრე გიორგაძე
 
         <!-- Header Section -->
         <div class="content has-text-centered">
-          <h1 class="title georgian-caps">{{ personalData.name }}</h1>
+          <h2 class="title georgian-caps">{{ personalData.name }}</h2>
           <div class="buttons is-centered">
             <!-- LinkedIn Button -->
             <a href="{{ personalData.linkedin }}" class="button is-light is-borderless" target="_blank" style="color: #45d1a2; border: none; background: transparent;">
