@@ -80,11 +80,13 @@ title: Aleksandre Giorgadze
         </div>
 
         <!-- Projects Section -->
-        <div class="content" style="margin-bottom: 20px;"> <!-- Added margin-bottom for spacing -->
+        <div class="content" style="margin-bottom: 20px;">
           <span class="heading"><h3>Projects</h3></span>
           {% for project in site.data.proj %}
             <div class="level is-marginless">
-              <p class="is-marginless" style="font-size: 0.8rem; font-weight: bold;">{{ project.title }}</p> <!-- Matched style to experience headliners -->
+              <li class="content is-marginless" style="font-size: 0.8rem">
+                <span class="heading is-marginless">{{ project.title }}</span>
+              </li>
               <p style="text-align: right; font-size: 0.8rem;">{{ project.time_period }}</p>
             </div>
             <p style="font-size: 0.8rem; margin-top: 0.5rem;">{{ project.description }}</p>
