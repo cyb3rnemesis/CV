@@ -54,7 +54,7 @@ title: Aleksandre Giorgadze
 
         <!-- About Me Section -->
         <div class="content">
-          <span class="heading"><h3>About Me</h3></span>
+          <span class="heading"><h3 style="color: #000000; font-weight: 900; font-size: 1.3rem;">About Me</h3></span>
           {% for paragraph in aboutMe %}
             <p style="font-size: 0.8rem">{{ paragraph }}</p>
           {% endfor %}
@@ -62,7 +62,7 @@ title: Aleksandre Giorgadze
 
         <!-- Experience Section -->
         <div class="content">
-          <span class="heading"><h3>Experience</h3></span>
+          <span class="heading"><h3 style="color: #000000; font-weight: 900; font-size: 1.3rem;">Experience</h3></span>
           {% for experience in site.data.exp %}
             <div class="level is-marginless">
               <p class="is-marginless">{{ experience.company }}<br/><span class="content is-marginless" style="font-size: 0.8rem">{{ experience.role }}</span></p>
@@ -71,7 +71,7 @@ title: Aleksandre Giorgadze
             <ul style="margin-top: 0.2em; list-style-type: circle;">
               {% for detail in experience.details %}
               <li class="content is-marginless" style="font-size: 0.8rem">
-                <span class="heading is-marginless">{{ detail.title }}</span>
+                <span class="heading is-marginless" style="color: #4a4a4a; font-weight: 600; font-size: 0.9rem;">{{ detail.title }}</span>
                 {{ detail.description }}
               </li>
               {% endfor %}
@@ -81,7 +81,7 @@ title: Aleksandre Giorgadze
 
         <!-- Education Section -->
         <div class="content">
-          <span class="heading"><h3>Education</h3></span>
+          <span class="heading"><h3 style="color: #000000; font-weight: 900; font-size: 1.3rem;">Education</h3></span>
           {% for education in site.data.edu %}
             <div class="level is-marginless">
               <p class="is-marginless">{{ education.school }}<br/>
@@ -98,11 +98,11 @@ title: Aleksandre Giorgadze
 
         <!-- Projects Section -->
         <div class="content" style="margin-bottom: 40px;"> <!-- Increased margin-bottom -->
-          <span class="heading"><h3>Projects</h3></span>
+          <span class="heading"><h3 style="color: #000000; font-weight: 900; font-size: 1.3rem;">Projects</h3></span>
           {% for project in site.data.proj %}
             <div class="level is-marginless">
               <p class="is-marginless" style="font-size: 0.8rem">
-                <span class="heading is-marginless">{{ project.title }}</span>
+                <span class="heading is-marginless" style="color: #4a4a4a; font-weight: 600; font-size: 0.9rem;">{{ project.title }}</span>
               </p>
               <p style="text-align: right; font-size: 0.8rem;">{{ project.time_period }}</p>
             </div>
@@ -115,7 +115,7 @@ title: Aleksandre Giorgadze
           <!-- Soft Skills (moved to first position) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3>Soft Skills</h3></span>
+              <span class="heading"><h3 style="color: #000000; font-weight: 900; font-size: 1.3rem;">Soft Skills</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle;">
                 {% for skill in skills["Soft Skills"] %}
                   <li>{{ skill }}</li>
@@ -127,7 +127,7 @@ title: Aleksandre Giorgadze
           <!-- Professional Skills (moved to second position) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3>Professional Skills</h3></span>
+              <span class="heading"><h3 style="color: #000000; font-weight: 900; font-size: 1.3rem;">Professional Skills</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle;">
                 {% for skill in skills["Professional Skills"] %}
                   <li>{{ skill }}</li>
@@ -139,7 +139,7 @@ title: Aleksandre Giorgadze
           <!-- Languages -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3>Languages</h3></span>
+              <span class="heading"><h3 style="color: #000000; font-weight: 900; font-size: 1.3rem;">Languages</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle;">
                 {% for language in personalData.languages %}
                   <li>{{ language.language }}: {{ language.level }}</li>
