@@ -1,9 +1,9 @@
 ---
-title: Aleksandre Giorgadze
+title: ალექსანდრე გიორგაძე
 ---
-{% assign personalData = site.data.personal[0] %}
-{% assign aboutMe = site.data.aboutme.about %}
-{% assign skills = site.data.skill.skills %}
+{% assign personalData = site.data.ka.personal[0] %}
+{% assign aboutMe = site.data.ka.aboutme.about %}
+{% assign skills = site.data.ka.skill.skills %}
 <!DOCTYPE html>
 <html lang="ka">
   <head>
@@ -154,7 +154,7 @@ title: Aleksandre Giorgadze
           <!-- Languages (moved to right) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 200;">Languages</h3></span>
+              <span class="heading"><h3 style="color: #000000; font-weight: 200;">ენები</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle; color: #4d4d4d;">
                 {% for language in personalData.languages %}
                   <li>{{ language.language }}: {{ language.level }}</li>
