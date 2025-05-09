@@ -38,3 +38,10 @@ _site
 *.xcp
 *.xdy
 *.tdo
+
+# Ignore all PDFs
+*.pdf
+
+# Except the English resume
+!ResumeENG.pdf
+!assets/ResumeENG.pdf
