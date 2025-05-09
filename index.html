@@ -71,7 +71,7 @@ title: Aleksandre Giorgadze
             <ul style="margin-top: 0.2em; list-style-type: circle;">
               {% for detail in experience.details %}
               <li class="content is-marginless" style="font-size: 0.8rem">
-                <span class="heading is-marginless" style="color: #4a4a4a; font-weight: 600; font-size: 0.9rem;">{{ detail.title }}</span>
+                <span class="heading is-marginless">{{ detail.title }}</span>
                 {{ detail.description }}
               </li>
               {% endfor %}
@@ -102,7 +102,7 @@ title: Aleksandre Giorgadze
           {% for project in site.data.proj %}
             <div class="level is-marginless">
               <p class="is-marginless" style="font-size: 0.8rem">
-                <span class="heading is-marginless" style="color: #4a4a4a; font-weight: 600; font-size: 0.9rem;">{{ project.title }}</span>
+                <span class="heading is-marginless">{{ project.title }}</span>
               </p>
               <p style="text-align: right; font-size: 0.8rem;">{{ project.time_period }}</p>
             </div>
