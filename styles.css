@@ -1,4 +1,17 @@
 .heading {
-  color: black; /* Set heading color to black */
-  font-weight: bold; /* Make headings bold */
-}
+    color: black;
+    font-weight: 600;
+  }
+  
+  .heading h3 {
+    color: #1a1a1a; /* Darker color for section headings */
+    font-weight: 800; /* Bolder weight for section headings */
+    font-size: 1.2rem;
+  }
+  
+  /* This matches the LaTeX \resumeItem styling */
+  .heading.is-marginless {
+    color: #4a4a4a; /* Similar to light-gray in LaTeX */
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
