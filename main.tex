@@ -34,7 +34,7 @@
 \addtolength{\oddsidemargin}{-0.475in}
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-0.65in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -46,7 +46,13 @@
 %-------------------------------------------
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+}{}{0em}{}[\color{black}\titlerule]
+
+% Space after section title and rule
+\titlespacing{\section}{0pt}{10pt}{8pt}  % Changed from {0pt}{12pt}{10pt}
+
+% Modify spacing after section content
+\newcommand{\sectionspace}{\vspace{4.5pt}}  % Changed from 6pt to 3pt
 
 % Custom commands
 %-------------------------------------------
@@ -66,11 +72,11 @@
 }
 
 \newcommand{\resumeExpEntry}[5]{
-  \vspace{-1pt}\item
+  \vspace{-2pt}\item     % Changed from -1pt
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small\textcolor{light-gray}{#3 $\cdot$ #4}} & \textit{\small\textcolor{light-gray}{#5}} \\
-    \end{tabular*}\vspace{-5pt}
+    \end{tabular*}\vspace{-7pt}    % Changed from -5pt
 }
 
 \newcommand{\resumeSubItem}[3]{\resumeItem{#1}{#2}{#3}\vspace{-4pt}}
@@ -79,8 +85,11 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\setlist{rightmargin=10pt}\begin{itemize}}
+\newcommand{\resumeItemListStart}{\setlist{rightmargin=10pt,topsep=2pt}\begin{itemize}}  % Added topsep=2pt
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\setlist[itemize]{leftmargin=*, topsep=0pt, partopsep=0pt}
+\setlength{\parskip}{0pt}
 
 \begin{document}
 
@@ -94,36 +103,92 @@ require("_lua/parser.lua")
 %-------------------------------------------
 \directlua{printHeading("_data/personal.json")}
 
-% Print Education
+% Header with personal info
 %-------------------------------------------
-\section{Education}
-  \resumeSubHeadingListStart
-	\directlua{printEduItems("_data/edu.json")}
-  \resumeSubHeadingListEnd
+\begin{center}
+    \vspace{10pt}  % Added 5pt space before name
+    {\Huge \scshape Aleksandre Giorgadze} \\ \vspace{8pt}
+    \small
+    \href{mailto:giorgadzealexandree@gmail.com}{\underline{giorgadzealexandree@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/aleksandregiorgadze/}{\underline{linkedin.com/in/aleksandregiorgadze}} $|$
+    \href{https://github.com/cyb3rnemesis}{\underline{github.com/cyb3rnemesis}}
+\end{center}
+
+% About Me
+%-------------------------------------------
+\section{About Me}
+Analytical and detail-oriented professional with experience in data research and analysis. Skilled in leveraging business intelligence tools and conducting market research. Strong background in physics and mathematics, combining technical expertise with practical business applications. Demonstrated ability to work effectively in international teams and adapt to dynamic environments.
+\sectionspace
 
 % Print Experience
 %-------------------------------------------
 \section{Experience}
-  \resumeSubHeadingListStart
-  	\directlua{printExpItems("_data/exp.json")}
-  \resumeSubHeadingListEnd
+\begin{itemize}[leftmargin=*]
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Scandiweb} & Tbilisi, Georgia \\
+      \textit{\small\textcolor{light-gray}{Data Research Analyst}} & \textit{\small\textcolor{light-gray}{Jul 2023 - May 2024}}
+    \end{tabular*}
+    \begin{itemize}
+      \item Business Development and Data Analysis: Researched and analyzed thousands of companies to identify ideal customer profile (ICP) matches for targeted outreach strategies. Utilized Salesforce CRM and other business intelligence tools to manage prospect data and track client engagement.
+      \item Quality Assurance (QA): Performed manual QA testing to verify website functionality and ensure optimal user experience. Collaborated with developers to identify and resolve issues.
+      \item Collaboration and Process Improvement: Collaborated with an international team to refine lead qualification processes and improve conversion rates. Gained valuable insights into data-driven decision-making and B2B business development strategies.
+    \end{itemize}
 
-% Print Projects
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{Evolution Gaming} & Tbilisi, Georgia \\
+      \textit{\small\textcolor{light-gray}{Schedule Specialist}} & \textit{\small\textcolor{light-gray}{Feb 2022 - Jun 2023}}
+    \end{tabular*}
+    \begin{itemize}
+      \item Staff Scheduling and Resource Allocation: Coordinated complex staff scheduling across multiple game types. Developed effective solutions for unexpected staffing challenges and operational disruptions.
+      \item Communication and Team Management: Served as a liaison between management and game presenters, facilitating clear communication.
+      \item Skill Development: Enhanced English language proficiency through daily interactions with international colleagues.
+    \end{itemize}
+\end{itemize}
+\sectionspace
+
+% Education
 %-------------------------------------------
-\section{\href{https://github.com/pforpallav}{Projects}}
+\section{Education}
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{Free University of Tbilisi} & Tbilisi, Georgia \\
+    \textit{\small\textcolor{light-gray}{Bachelor of Physics}} & \textit{\small\textcolor{light-gray}{Sep 2020 - Present}}
+\end{tabular*}
+Currently pursuing a degree in Physics. Developing strong analytical and problem-solving skills through coursework, laboratory experiments, and group projects.
+\sectionspace
+
+% Print Projects \& Volunteering
+%-------------------------------------------
+\section{Projects \& Volunteering}
   \resumeSubHeadingListStart
-    \directlua{printProjItems("_data/proj.json")}
+    \resumeExpEntry{Kolkheti National Park}{Ambassador/Volunteer}
+    {Community Outreach}{Environmental Awareness}{Jun 2019 - Sep 2021}
+    \resumeItemListStart
+      \item{Organized camps and workshops about Kolkheti National Park}
+      \item{Collaborated with Peace Corps on environmental initiatives}
+    \resumeItemListEnd
+    \vspace{4pt}  % Add space between volunteer positions
+
+    \resumeExpEntry{Unicef For Every Child}{Volunteer}
+    {Community Support}{Children's Rights}{Apr 2020 - May 2020}
+    \resumeItemListStart
+      \item{Contributed to community outreach and fundraising efforts}
+    \resumeItemListEnd
   \resumeSubHeadingListEnd
-  
+\sectionspace
+
+% Adjust bottom spacing
+ % Add this before Skills section to reduce space at bottom
+
 % Print Skills
 %-------------------------------------------
-\section{Programming Skills}
-  \resumeSubHeadingListStart 
-    \item{
-      \textbf{Languages}{: \directlua{printList("_data/personal.json", "languages", "language")}}
-      \hfill
-      \textbf{Technologies}{: \directlua{printList("_data/personal.json", "technologies", "technology")}}
-      }
+\section{Skills}
+  \resumeSubHeadingListStart
+    \resumeItem{Professional Skills}{C, Data Analysis, Mathematical Modeling, Lead Generation, Salesforce CRM, Quality Assurance Testing, Market Research, Staff Scheduling}{}
+    \resumeItem{Soft Skills}{Time Management, Cross-Cultural Communication, Problem Solving, Adaptability, Critical Thinking, Team Collaboration, Attention to Detail}{}
+    \resumeItem{Languages}{Georgian (Native), English (C1), Russian (A1)}{}
   \resumeSubHeadingListEnd
+\sectionspace
 
 \end{document}
