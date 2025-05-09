@@ -56,7 +56,7 @@ title: Aleksandre Giorgadze
         <div class="content">
           <span class="heading"><h3 style="color: #000000; font-weight: 200;">About Me</h3></span>
           {% for paragraph in aboutMe %}
-            <p style="font-size: 0.8rem; color: #4d4d4d;">{{ paragraph }}</p>
+            <p style="font-size: 0.8rem; color: #808080;">{{ paragraph }}</p>
           {% endfor %}
         </div>
 
@@ -65,14 +65,14 @@ title: Aleksandre Giorgadze
           <span class="heading"><h3 style="color: #000000; font-weight: 200;">Experience</h3></span>
           {% for experience in site.data.exp %}
             <div class="level is-marginless">
-              <p class="is-marginless" style="font-weight: 200;">{{ experience.company }}<br/><span class="content is-marginless" style="font-size: 0.8rem">{{ experience.role }}</span></p>
+              <p class="is-marginless" style="font-weight: 200; color: #666666;">{{ experience.company }}<br/><span class="content is-marginless" style="font-size: 0.8rem; color: #808080;">{{ experience.role }}</span></p>
               <p style="text-align: right; font-size: 0.8rem">{{ experience.company_location }}<br/><span class="content is-marginless">{{ experience.time_duration }}</span></p>
             </div>
             <ul style="margin-top: 0.2em; list-style-type: circle;">
               {% for detail in experience.details %}
               <li class="content is-marginless" style="font-size: 0.8rem">
-                <span class="heading is-marginless">{{ detail.title }}</span>
-                <span style="color: #4d4d4d;">{{ detail.description }}</span>
+                <span class="heading is-marginless" style="color: #666666;">{{ detail.title }}</span>
+                <span style="color: #808080;">{{ detail.description }}</span>
               </li>
               {% endfor %}
             </ul>
@@ -102,11 +102,11 @@ title: Aleksandre Giorgadze
           {% for project in site.data.proj %}
             <div class="level is-marginless">
               <p class="is-marginless" style="font-size: 0.8rem">
-                <span class="heading is-marginless" style="font-weight: 200;">{{ project.title }}</span>
+                <span class="heading is-marginless" style="font-weight: 200; color: #666666;">{{ project.title }}</span>
               </p>
               <p style="text-align: right; font-size: 0.8rem;">{{ project.time_period }}</p>
             </div>
-            <p style="font-size: 0.8rem; margin-top: 0.5rem;">{{ project.description }}</p>
+            <p style="font-size: 0.8rem; color: #808080; margin-top: 0.5rem;">{{ project.description }}</p>
           {% endfor %}
         </div>
 
@@ -116,7 +116,7 @@ title: Aleksandre Giorgadze
           <div class="column">
             <div class="content">
               <span class="heading"><h3 style="color: #000000; font-weight: 200;">Soft Skills</h3></span>
-              <ul style="font-size: 0.8rem; list-style-type: circle;">
+              <ul style="font-size: 0.8rem; list-style-type: circle; color: #808080;">
                 {% for skill in skills["Soft Skills"] %}
                   <li>{{ skill }}</li>
                 {% endfor %}
@@ -128,7 +128,7 @@ title: Aleksandre Giorgadze
           <div class="column">
             <div class="content">
               <span class="heading"><h3 style="color: #000000; font-weight: 200;">Professional Skills</h3></span>
-              <ul style="font-size: 0.8rem; list-style-type: circle;">
+              <ul style="font-size: 0.8rem; list-style-type: circle; color: #808080;">
                 {% for skill in skills["Professional Skills"] %}
                   <li>{{ skill }}</li>
                 {% endfor %}
@@ -140,7 +140,7 @@ title: Aleksandre Giorgadze
           <div class="column">
             <div class="content">
               <span class="heading"><h3 style="color: #000000; font-weight: 200;">Languages</h3></span>
-              <ul style="font-size: 0.8rem; list-style-type: circle;">
+              <ul style="font-size: 0.8rem; list-style-type: circle; color: #808080;">
                 {% for language in personalData.languages %}
                   <li>{{ language.language }}: {{ language.level }}</li>
                 {% endfor %}
