@@ -26,25 +26,25 @@ title: Aleksandre Giorgadze
           <h1 class="title">{{ personalData.name }}</h1>
           <div class="buttons is-centered">
             <!-- LinkedIn Button -->
-            <a href="{{ personalData.linkedin }}" class="button is-light is-borderless" target="_blank" style="color: #39FF14; border: none;">
+            <a href="{{ personalData.linkedin }}" class="button is-light is-borderless" target="_blank" style="color: #39FF14; border: none; background: transparent;">
               <span class="icon">
                 <i class="fa fa-linkedin"></i>
               </span>
             </a>
             <!-- GitHub Button -->
-            <a href="{{ personalData.github }}" class="button is-light is-borderless" target="_blank" style="color: #39FF14; border: none;">
+            <a href="{{ personalData.github }}" class="button is-light is-borderless" target="_blank" style="color: #39FF14; border: none; background: transparent;">
               <span class="icon">
                 <i class="fa fa-github"></i>
               </span>
             </a>
             <!-- Download Button -->
-            <a href="/assets/resume.pdf" class="button is-light is-borderless" download style="color: #39FF14; border: none;">
+            <a href="/assets/resume.pdf" class="button is-light is-borderless" download style="color: #39FF14; border: none; background: transparent;">
               <span class="icon">
                 <i class="fa fa-download"></i>
               </span>
             </a>
             <!-- Email Button -->
-            <a href="mailto:{{ personalData.email }}" class="button is-light is-borderless" target="_blank" style="color: #39FF14; border: none;">
+            <a href="mailto:{{ personalData.email }}" class="button is-light is-borderless" target="_blank" style="color: #39FF14; border: none; background: transparent;">
               <span class="icon">
                 <i class="fa fa-envelope"></i>
               </span>
@@ -80,13 +80,13 @@ title: Aleksandre Giorgadze
         </div>
 
         <!-- Projects Section -->
-        <div class="content" style="margin-bottom: 20px;">
+        <div class="content" style="margin-bottom: 40px;"> <!-- Increased margin-bottom -->
           <span class="heading"><h3>Projects</h3></span>
           {% for project in site.data.proj %}
             <div class="level is-marginless">
-              <li class="content is-marginless" style="font-size: 0.8rem">
+              <p class="is-marginless" style="font-size: 0.8rem">
                 <span class="heading is-marginless">{{ project.title }}</span>
-              </li>
+              </p>
               <p style="text-align: right; font-size: 0.8rem;">{{ project.time_period }}</p>
             </div>
             <p style="font-size: 0.8rem; margin-top: 0.5rem;">{{ project.description }}</p>
