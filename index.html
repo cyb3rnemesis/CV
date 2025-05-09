@@ -54,7 +54,7 @@ title: Aleksandre Giorgadze
 
         <!-- About Me Section -->
         <div class="content">
-          <span class="heading"><h3 style="color: #000000; font-weight: 200;">About Me</h3></span>
+          <span class="heading"><h3 style="color: #1a1a1a; font-weight: 200;">About Me</h3></span>
           {% for paragraph in aboutMe %}
             <p style="font-size: 0.8rem; color: #4d4d4d;">{{ paragraph }}</p>
           {% endfor %}
@@ -62,11 +62,15 @@ title: Aleksandre Giorgadze
 
         <!-- Experience Section -->
         <div class="content">
-          <span class="heading"><h3 style="color: #000000; font-weight: 200;">Experience</h3></span>
+          <span class="heading"><h3 style="color: #1a1a1a; font-weight: 200;">Experience</h3></span>
           {% for experience in site.data.exp %}
             <div class="level is-marginless">
-              <p class="is-marginless" style="font-weight: 200; color: #4d4d4d;">{{ experience.company }}<br/><span class="content is-marginless" style="font-size: 0.8rem; color: #4d4d4d;">{{ experience.role }}</span></p>
-              <p style="text-align: right; font-size: 0.8rem">{{ experience.company_location }}<br/><span class="content is-marginless">{{ experience.time_duration }}</span></p>
+              <p class="is-marginless" style="font-weight: 200; color: #4d4d4d;">{{ experience.company }}<br/>
+                <span class="content is-marginless" style="font-size: 0.8rem; color: #4d4d4d;">{{ experience.role }}</span>
+              </p>
+              <p style="text-align: right; font-size: 0.8rem; color: #4d4d4d;">{{ experience.company_location }}<br/>
+                <span class="content is-marginless" style="color: #4d4d4d;">{{ experience.time_duration }}</span>
+              </p>
             </div>
             <ul style="margin-top: 0.2em; list-style-type: circle;">
               {% for detail in experience.details %}
@@ -81,30 +85,29 @@ title: Aleksandre Giorgadze
 
         <!-- Education Section -->
         <div class="content">
-          <span class="heading"><h3 style="color: #000000; font-weight: 200;">Education</h3></span>
+          <span class="heading"><h3 style="color: #1a1a1a; font-weight: 200;">Education</h3></span>
           {% for education in site.data.edu %}
             <div class="level is-marginless">
-              <p class="is-marginless" style="font-weight: 200;">{{ education.school }}<br/>
-                <span class="content is-marginless" style="font-size: 0.8rem">{{ education.degree }}</span>
+              <p class="is-marginless" style="font-weight: 200; color: #4d4d4d;">{{ education.school }}<br/>
+                <span class="content is-marginless" style="font-size: 0.8rem; color: #4d4d4d;">{{ education.degree }}</span>
               </p>
-              <p style="text-align: right; font-size: 0.8rem">
-                {{ education.school_location }}<br/>
-                <span class="content is-marginless">{{ education.time_period }}</span>
+              <p style="text-align: right; font-size: 0.8rem; color: #4d4d4d;">{{ education.school_location }}<br/>
+                <span class="content is-marginless" style="color: #4d4d4d;">{{ education.time_period }}</span>
               </p>
             </div>
-            <p style="font-size: 0.8rem; margin-top: 0.5rem;">{{ education.details }}</p>
+            <p style="font-size: 0.8rem; margin-top: 0.5rem; color: #4d4d4d;">{{ education.details }}</p>
           {% endfor %}
         </div>
 
         <!-- Projects Section -->
         <div class="content" style="margin-bottom: 40px;"> <!-- Increased margin-bottom -->
-          <span class="heading"><h3 style="color: #000000; font-weight: 200;">Projects</h3></span>
+          <span class="heading"><h3 style="color: #1a1a1a; font-weight: 200;">Projects</h3></span>
           {% for project in site.data.proj %}
             <div class="level is-marginless">
               <p class="is-marginless" style="font-size: 0.8rem">
                 <span class="heading is-marginless" style="font-weight: 200; color: #4d4d4d;">{{ project.title }}</span>
               </p>
-              <p style="text-align: right; font-size: 0.8rem;">{{ project.time_period }}</p>
+              <p style="text-align: right; font-size: 0.8rem; color: #4d4d4d;">{{ project.time_period }}</p>
             </div>
             <p style="font-size: 0.8rem; color: #4d4d4d; margin-top: 0.5rem;">{{ project.description }}</p>
           {% endfor %}
@@ -115,7 +118,7 @@ title: Aleksandre Giorgadze
           <!-- Soft Skills -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 200;">Soft Skills</h3></span>
+              <span class="heading"><h3 style="color: #1a1a1a; font-weight: 200;">Soft Skills</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle; color: #4d4d4d;">
                 {% for skill in skills["Soft Skills"] %}
                   <li>{{ skill }}</li>
@@ -127,7 +130,7 @@ title: Aleksandre Giorgadze
           <!-- Professional Skills (moved to middle) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 200;">Professional Skills</h3></span>
+              <span class="heading"><h3 style="color: #1a1a1a; font-weight: 200;">Professional Skills</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle; color: #4d4d4d;">
                 {% for skill in skills["Professional Skills"] %}
                   <li>{{ skill }}</li>
@@ -139,7 +142,7 @@ title: Aleksandre Giorgadze
           <!-- Languages (moved to right) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 200;">Languages</h3></span>
+              <span class="heading"><h3 style="color: #1a1a1a; font-weight: 200;">Languages</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle; color: #4d4d4d;">
                 {% for language in personalData.languages %}
                   <li>{{ language.language }}: {{ language.level }}</li>
