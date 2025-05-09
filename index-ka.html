@@ -13,6 +13,28 @@ title: ალექსანდრე გიორგაძე
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.4.1/css/bulma.min.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/assets/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        .georgian-caps {
+            font-family: 'Noto Sans Georgian', sans-serif;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+        
+        h1.title {
+            font-size: 1.8rem !important;
+        }
+        
+        h2.subtitle {
+            font-size: 1.2rem !important;
+            font-weight: 700;
+        }
+        
+        h3.skill-title {
+            font-size: 1rem !important;
+        }
+    </style>
 
     <title>ალექსანდრე გიორგაძე | რეზიუმე</title>
   </head>
@@ -23,7 +45,7 @@ title: ალექსანდრე გიორგაძე
 
         <!-- Header Section -->
         <div class="content has-text-centered">
-          <h1 class="title">{{ personalData.name }}</h1>
+          <h1 class="title georgian-caps">{{ personalData.name }}</h1>
           <div class="buttons is-centered">
             <!-- LinkedIn Button -->
             <a href="{{ personalData.linkedin }}" class="button is-light is-borderless" target="_blank" style="color: #45d1a2; border: none; background: transparent;">
@@ -63,7 +85,7 @@ title: ალექსანდრე გიორგაძე
 
         <!-- About Me Section -->
         <div class="content">
-          <h2 class="subtitle">ჩემს შესახებ</h2>
+          <h2 class="subtitle georgian-caps">ჩემს შესახებ</h2>
           {% for paragraph in aboutMe %}
             <p style="font-size: 0.8rem; color: #4d4d4d;">{{ paragraph }}</p>
           {% endfor %}
@@ -71,7 +93,7 @@ title: ალექსანდრე გიორგაძე
 
         <!-- Experience Section -->
         <div class="content">
-          <h2 class="subtitle">გამოცდილება</h2>
+          <h2 class="subtitle georgian-caps">გამოცდილება</h2>
           {% for experience in site.data.ka.exp %}
             <div class="level is-marginless">
               <p class="is-marginless" style="font-weight: 200; color: #4d4d4d;">{{ experience.company }}<br/>
@@ -94,7 +116,7 @@ title: ალექსანდრე გიორგაძე
 
         <!-- Education Section -->
         <div class="content">
-          <h2 class="subtitle">განათლება</h2>
+          <h2 class="subtitle georgian-caps">განათლება</h2>
           {% for education in site.data.ka.edu %}
             <div class="level is-marginless">
               <p class="is-marginless" style="font-weight: 200; color: #4d4d4d;">{{ education.school }}<br/>
@@ -110,7 +132,7 @@ title: ალექსანდრე გიორგაძე
 
         <!-- Projects Section -->
         <div class="content" style="margin-bottom: 40px;"> <!-- Increased margin-bottom -->
-          <h2 class="subtitle">პროექტები და მოხალისეობა</h2>
+          <h2 class="subtitle georgian-caps">პროექტები და მოხალისეობა</h2>
           {% for project in site.data.ka.proj %}
             <div class="level is-marginless">
               <p class="is-marginless" style="font-size: 0.8rem">
@@ -124,13 +146,13 @@ title: ალექსანდრე გიორგაძე
 
         <!-- Skills and Languages Section -->
         <div class="content">
-          <h2 class="subtitle">უნარები</h2>
+          <h2 class="subtitle georgian-caps">უნარები</h2>
         </div>
         <div class="columns" style="margin-bottom: 60px;">  <!-- Changed from 80px to 60px -->
           <!-- Soft Skills -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 200;">პიროვნული უნარები</h3></span>
+              <span class="heading"><h3 class="skill-title georgian-caps" style="color: #000000; font-weight: 200;">პიროვნული უნარები</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle; color: #4d4d4d;">
                 {% for skill in skills["Soft Skills"] %}
                   <li>{{ skill }}</li>
@@ -142,7 +164,7 @@ title: ალექსანდრე გიორგაძე
           <!-- Professional Skills (moved to middle) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 200;">პროფესიული უნარები</h3></span>
+              <span class="heading"><h3 class="skill-title georgian-caps" style="color: #000000; font-weight: 200;">პროფესიული უნარები</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle; color: #4d4d4d;">
                 {% for skill in skills["Professional Skills"] %}
                   <li>{{ skill }}</li>
@@ -154,7 +176,7 @@ title: ალექსანდრე გიორგაძე
           <!-- Languages (moved to right) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 200;">ენები</h3></span>
+              <span class="heading"><h3 class="skill-title georgian-caps" style="color: #000000; font-weight: 200;">ენები</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle; color: #4d4d4d;">
                 {% for language in personalData.languages %}
                   <li>{{ language.language }}: {{ language.level }}</li>
