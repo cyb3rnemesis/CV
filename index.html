@@ -54,7 +54,7 @@ title: Aleksandre Giorgadze
 
         <!-- About Me Section -->
         <div class="content">
-          <span class="heading"><h3 style="color: #000000; font-weight: 100;">About Me</h3></span>
+          <span class="heading"><h3 style="color: #000000; font-weight: 400;">About Me</h3></span>
           {% for paragraph in aboutMe %}
             <p style="font-size: 0.8rem">{{ paragraph }}</p>
           {% endfor %}
@@ -62,10 +62,10 @@ title: Aleksandre Giorgadze
 
         <!-- Experience Section -->
         <div class="content">
-          <span class="heading"><h3 style="color: #000000; font-weight: 100;">Experience</h3></span>
+          <span class="heading"><h3 style="color: #000000; font-weight: 400;">Experience</h3></span>
           {% for experience in site.data.exp %}
             <div class="level is-marginless">
-              <p class="is-marginless" style="font-weight: 50;">{{ experience.company }}<br/><span class="content is-marginless" style="font-size: 0.8rem">{{ experience.role }}</span></p>
+              <p class="is-marginless" style="font-weight: 200;">{{ experience.company }}<br/><span class="content is-marginless" style="font-size: 0.8rem">{{ experience.role }}</span></p>
               <p style="text-align: right; font-size: 0.8rem">{{ experience.company_location }}<br/><span class="content is-marginless">{{ experience.time_duration }}</span></p>
             </div>
             <ul style="margin-top: 0.2em; list-style-type: circle;">
@@ -81,10 +81,10 @@ title: Aleksandre Giorgadze
 
         <!-- Education Section -->
         <div class="content">
-          <span class="heading"><h3 style="color: #000000; font-weight: 100;">Education</h3></span>
+          <span class="heading"><h3 style="color: #000000; font-weight: 400;">Education</h3></span>
           {% for education in site.data.edu %}
             <div class="level is-marginless">
-              <p class="is-marginless" style="font-weight: 50;">{{ education.school }}<br/>
+              <p class="is-marginless" style="font-weight: 200;">{{ education.school }}<br/>
                 <span class="content is-marginless" style="font-size: 0.8rem">{{ education.degree }}</span>
               </p>
               <p style="text-align: right; font-size: 0.8rem">
@@ -98,11 +98,11 @@ title: Aleksandre Giorgadze
 
         <!-- Projects Section -->
         <div class="content" style="margin-bottom: 40px;"> <!-- Increased margin-bottom -->
-          <span class="heading"><h3 style="color: #000000; font-weight: 100;">Projects</h3></span>
+          <span class="heading"><h3 style="color: #000000; font-weight: 400;">Projects</h3></span>
           {% for project in site.data.proj %}
             <div class="level is-marginless">
               <p class="is-marginless" style="font-size: 0.8rem">
-                <span class="heading is-marginless" style="font-weight: 50;">{{ project.title }}</span>
+                <span class="heading is-marginless" style="font-weight: 200;">{{ project.title }}</span>
               </p>
               <p style="text-align: right; font-size: 0.8rem;">{{ project.time_period }}</p>
             </div>
@@ -115,7 +115,7 @@ title: Aleksandre Giorgadze
           <!-- Soft Skills -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 100;">Soft Skills</h3></span>
+              <span class="heading"><h3 style="color: #000000; font-weight: 400;">Soft Skills</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle;">
                 {% for skill in skills["Soft Skills"] %}
                   <li>{{ skill }}</li>
@@ -127,7 +127,7 @@ title: Aleksandre Giorgadze
           <!-- Professional Skills (moved to middle) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 100;">Professional Skills</h3></span>
+              <span class="heading"><h3 style="color: #000000; font-weight: 400;">Professional Skills</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle;">
                 {% for skill in skills["Professional Skills"] %}
                   <li>{{ skill }}</li>
@@ -139,7 +139,7 @@ title: Aleksandre Giorgadze
           <!-- Languages (moved to right) -->
           <div class="column">
             <div class="content">
-              <span class="heading"><h3 style="color: #000000; font-weight: 100;">Languages</h3></span>
+              <span class="heading"><h3 style="color: #000000; font-weight: 400;">Languages</h3></span>
               <ul style="font-size: 0.8rem; list-style-type: circle;">
                 {% for language in personalData.languages %}
                   <li>{{ language.language }}: {{ language.level }}</li>
