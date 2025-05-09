@@ -1,9 +1,9 @@
 [
     {
-        "school": "Free University of Tbilisi",
-        "school_location": "Tbilisi, Georgia",
-        "degree": "Bachelor of Physics",
-        "time_period": "Sep 2020 - Present",
-        "details": "Currently pursuing a degree in Physics. Developing strong analytical and problem-solving skills through coursework, laboratory experiments, and group projects."
+        "school": "თბილისის თავისუფალი უნივერსიტეტი",
+        "school_location": "თბილისი, საქართველო",
+        "degree": "ფიზიკის ბაკალავრი",
+        "time_period": "სექ 2020 - დღემდე",
+        "details": "ამჟამად ვსწავლობ ფიზიკის მიმართულებით. ვავითარებ ძლიერ ანალიტიკურ და პრობლემების გადაჭრის უნარებს სასწავლო კურსების, ლაბორატორიული ექსპერიმენტებისა და ჯგუფური პროექტების საშუალებით."
     }
 ]

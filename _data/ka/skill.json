@@ -1,26 +1,25 @@
 {
     "skills": {
         "Professional Skills": [
-            "Staff Scheduling",
-            "Data Analysis",
-            "Statistical Data Analysis",
-            "Mathematical Modeling",
-            "Lead Generation",
+            "პერსონალის გრაფიკის შედგენა",
+            "მონაცემთა ანალიზი",
+            "სტატისტიკური მონაცემების ანალიზი",
+            "მათემატიკური მოდელირება",
+            "ლიდების გენერირება",
             "Salesforce CRM",
-            "Quality Assurance Testing",
-            "Market Research"
-
+            "ხარისხის უზრუნველყოფის ტესტირება",
+            "ბაზრის კვლევა"
         ],
         "Soft Skills": [
-            "Time Management",
-            "Cross-Cultural Communication Skills",
-            "Problem Solving",
-            "Adaptability",
-            "Critical Thinking",
-            "Team Collaboration",
-            "Attention to Detail",
-            "Verbal and Written Communication",
-            "Initiative and Self-Motivation"
+            "დროის მართვა",
+            "კულტურათაშორისი კომუნიკაცია",
+            "პრობლემების გადაჭრა",
+            "ადაპტირების უნარი",
+            "კრიტიკული აზროვნება",
+            "გუნდური თანამშრომლობა",
+            "დეტალებზე ყურადღება",
+            "ვერბალური და წერითი კომუნიკაცია",
+            "ინიციატივა და თვითმოტივაცია"
         ]
     }
 }

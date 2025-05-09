@@ -1,41 +1,41 @@
 [
     {
         "company": "Scandiweb",
-        "company_location": "Tbilisi, Georgia",
-        "role": "Data Research Analyst",
-        "time_duration": "Jul 2023 - May 2024",
+        "company_location": "თბილისი, საქართველო",
+        "role": "მონაცემთა კვლევის ანალიტიკოსი",
+        "time_duration": "ივლ 2023 - მაი 2024",
         "details": [
             {
-                "title": "Business Development and Data Analysis",
-                "description": "Researched and analyzed thousands of companies to identify ideal customer profile (ICP) matches for targeted outreach strategies. Utilized Salesforce CRM and other business intelligence tools to manage prospect data and track client engagement."
+                "title": "ბიზნესის განვითარება და მონაცემთა ანალიზი",
+                "description": "გავაანალიზე ათასობით კომპანია იდეალური მომხმარებლის პროფილის (ICP) შესაბამისობის დასადგენად მიზნობრივი კომუნიკაციის სტრატეგიებისთვის. ვიყენებდი Salesforce CRM-ს და სხვა ბიზნეს ინტელექტის ინსტრუმენტებს პოტენციური კლიენტების მონაცემების სამართავად და კლიენტების ჩართულობის მონიტორინგისთვის."
             },
             {
-                "title": "Quality Assurance (QA)",
-                "description": "Performed manual QA testing to verify website functionality and ensure optimal user experience. Collaborated with developers to identify and resolve issues."
+                "title": "ხარისხის უზრუნველყოფა (QA)",
+                "description": "ვახორციელებდი მანუალურ QA ტესტირებას ვებსაიტის ფუნქციონალობის შესამოწმებლად და ოპტიმალური მომხმარებლის გამოცდილების უზრუნველსაყოფად. ვთანამშრომლობდი დეველოპერებთან პრობლემების იდენტიფიცირებისა და გადაჭრისთვის."
             },
             {
-                "title": "Collaboration and Process Improvement",
-                "description": "Collaborated with an international team to refine lead qualification processes and improve conversion rates. Gained valuable insights into data-driven decision-making and B2B business development strategies."
+                "title": "თანამშრომლობა და პროცესების გაუმჯობესება",
+                "description": "ვთანამშრომლობდი საერთაშორისო გუნდთან ლიდების კვალიფიკაციის პროცესების დახვეწისა და კონვერსიის მაჩვენებლების გაუმჯობესებისთვის. შევიძინე ფასეული გამოცდილება მონაცემებზე დაფუძნებული გადაწყვეტილებების მიღებასა და B2B ბიზნესის განვითარების სტრატეგიებში."
             }
         ]
     },
     {
         "company": "Evolution",
-        "company_location": "Tbilisi, Georgia",
-        "role": "Schedule Specialist",
-        "time_duration": "Feb 2022 - Jun 2023",
+        "company_location": "თბილისი, საქართველო",
+        "role": "გრაფიკის სპეციალისტი",
+        "time_duration": "თებ 2022 - ივნ 2023",
         "details": [
             {
-                "title": "Staff Scheduling and Resource Allocation",
-                "description": "Coordinated complex staff scheduling across multiple game types. Developed effective solutions for unexpected staffing challenges and operational disruptions, ensuring smooth operations in a fast-paced environment."
+                "title": "პერსონალის გრაფიკის შედგენა და რესურსების განაწილება",
+                "description": "ვაკოორდინირებდი კომპლექსურ პერსონალის გრაფიკებს სხვადასხვა თამაშის ტიპებისთვის. ვავითარებდი ეფექტურ გადაწყვეტილებებს მოულოდნელი კადრების გამოწვევებისა და ოპერაციული შეფერხებებისთვის."
             },
             {
-                "title": "Communication and Team Management",
-                "description": "Served as a liaison between management and game presenters, facilitating clear communication. Demonstrated high levels of accountability and discipline while handling multiple concurrent responsibilities."
+                "title": "კომუნიკაცია და გუნდის მართვა",
+                "description": "ვიყავი შუამავალი მენეჯმენტსა და თამაშის პრეზენტატორებს შორის, ვუზრუნველყოფდი მკაფიო კომუნიკაციას. ვავლენდი მაღალ პასუხისმგებლობასა და დისციპლინას მრავალი პარალელური მოვალეობის შესრულებისას."
             },
             {
-                "title": "Skill Development",
-                "description": "Enhanced English language proficiency through daily interactions with international colleagues. Strengthened time management, problem-solving, and adaptability skills while working in a diverse team."
+                "title": "უნარების განვითარება",
+                "description": "გავაუმჯობესე ინგლისური ენის ცოდნა საერთაშორისო კოლეგებთან ყოველდღიური ურთიერთობით. გავაძლიერე დროის მართვის, პრობლემების გადაჭრისა და ადაპტაციის უნარები მრავალფეროვან გუნდში მუშაობისას."
             }
         ]
     }

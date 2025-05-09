@@ -1,20 +1,20 @@
 [
     {
-        "name": "Aleksandre Giorgadze",
+        "name": "ალექსანდრე გიორგაძე",
         "email": "giorgadzealexandree@gmail.com",
         "linkedin": "https://www.linkedin.com/in/aleksandregiorgadze/",
         "github": "https://github.com/cyb3rnemesis",
         "languages": [
             {
-                "language": "Georgian",
-                "level": "Native"
+                "language": "ქართული",
+                "level": "მშობლიური"
             },
             {
-                "language": "English",
+                "language": "ინგლისური",
                 "level": "C1"
             },
             {
-                "language": "Russian",
+                "language": "რუსული",
                 "level": "A1"
             }
         ]
