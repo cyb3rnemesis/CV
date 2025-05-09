@@ -1,17 +1,25 @@
 .heading {
-    color: black;
-    font-weight: 600;
-  }
-  
-  .heading h3 {
-    color: #1a1a1a; /* Darker color for section headings */
-    font-weight: 800; /* Bolder weight for section headings */
-    font-size: 1.2rem;
-  }
-  
-  /* This matches the LaTeX \resumeItem styling */
-  .heading.is-marginless {
-    color: #4a4a4a; /* Similar to light-gray in LaTeX */
-    font-weight: bold;
-    font-size: 0.9rem;
-  }
+  color: black;
+  font-weight: 600;
+}
+
+/* Main section headings (About Me, Experience, Education, etc.) */
+.heading h3 {
+  color: #000000; /* Pure black for main headings */
+  font-weight: 900; /* Extra bold */
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+/* Sub-headings (Project titles, Experience details) */
+.heading.is-marginless {
+  color: #4a4a4a; /* Gray for sub-headings */
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+/* Company names and school names */
+.is-marginless {
+  color: #2a2a2a; /* Darker gray for institutions */
+  font-weight: 700;
+}
