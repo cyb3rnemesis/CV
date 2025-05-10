@@ -43,8 +43,8 @@ h2.title.georgian-caps {
 
 h2.subtitle.georgian-caps {
     font-size: 1.2rem !important;
-    font-weight: 700;
-    color: #161616 !important;
+    font-weight: 700 !important;
+    color: #4d4d4d !important;  /* Changed to dark gray */
 }
 
 h3.skill-title.georgian-caps {
