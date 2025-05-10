@@ -23,3 +23,32 @@
   color: #2a2a2a; /* Darker gray for institutions */
   font-weight: 700;
 }
+
+/* Georgian specific styles */
+.georgian-caps {
+    font-family: 'Noto Sans Georgian', sans-serif;
+    font-size: 0.9em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+h2.title.georgian-caps {
+    font-family: 'Noto Sans Georgian', sans-serif !important;
+    font-size: 1.8rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: #616161 !important;
+    font-weight: 700 !important;
+}
+
+h2.subtitle.georgian-caps {
+    font-size: 1.2rem !important;
+    font-weight: 700;
+    color: #161616 !important;
+}
+
+h3.skill-title.georgian-caps {
+    font-size: 1rem !important;
+    color: #161616 !important;
+    font-weight: 200;
+}
