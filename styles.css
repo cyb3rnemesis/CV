@@ -52,3 +52,20 @@ h3.skill-title.georgian-caps {
     color: #161616 !important;
     font-weight: 200;
 }
+
+/* Make the selector more specific for section headers */
+.content h2.subtitle.georgian-caps {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: #4d4d4d !important;
+}
+
+/* Add this to ensure the color overrides any other styles */
+.content .heading h2.subtitle.georgian-caps {
+    color: #4d4d4d !important;
+}
+
+/* Add this to handle any nested cases */
+.content > h2.subtitle.georgian-caps {
+    color: #4d4d4d !important;
+}
