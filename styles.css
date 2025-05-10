@@ -41,31 +41,16 @@ h2.title.georgian-caps {
     font-weight: 700 !important;
 }
 
+/* Remove duplicate selectors and make it more specific */
+.content h2.subtitle.georgian-caps,
 h2.subtitle.georgian-caps {
     font-size: 1.2rem !important;
     font-weight: 700 !important;
-    color: #4d4d4d !important;  /* Changed to dark gray */
+    color: #2c2c2c !important;  /* Changed to darker gray */
 }
 
 h3.skill-title.georgian-caps {
     font-size: 1rem !important;
     color: #161616 !important;
     font-weight: 200;
-}
-
-/* Make the selector more specific for section headers */
-.content h2.subtitle.georgian-caps {
-    font-size: 1.2rem !important;
-    font-weight: 700 !important;
-    color: #4d4d4d !important;
-}
-
-/* Add this to ensure the color overrides any other styles */
-.content .heading h2.subtitle.georgian-caps {
-    color: #4d4d4d !important;
-}
-
-/* Add this to handle any nested cases */
-.content > h2.subtitle.georgian-caps {
-    color: #4d4d4d !important;
 }
