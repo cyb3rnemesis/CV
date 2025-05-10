@@ -44,7 +44,7 @@ h2.title.georgian-caps {
 /* Remove duplicate selectors and make it more specific */
 .content h2.subtitle.georgian-caps,
 h2.subtitle.georgian-caps {
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
     font-weight: 700 !important;
     color: #2c2c2c !important;  /* Changed to darker gray */
 }
