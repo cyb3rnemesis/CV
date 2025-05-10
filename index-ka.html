@@ -26,13 +26,13 @@ title: ალექსანდრე გიორგაძე
           <div class="buttons is-centered">
             <!-- LinkedIn Button -->
             <a href="{{ personalData.linkedin }}" class="button is-light is-borderless" target="_blank" style="color: #45d1a2; border: none; background: transparent;">
-              <span class="icon" title="ლინკდინი">
+              <span class="icon" title="Linkedin">
                 <i class="fa fa-linkedin"></i>
               </span>
             </a>
             <!-- GitHub Button -->
             <a href="{{ personalData.github }}" class="button is-light is-borderless" target="_blank" style="color: #45d1a2; border: none; background: transparent;">
-              <span class="icon" title="გითჰაბი">
+              <span class="icon" title="GitHub">
                 <i class="fa fa-github"></i>
               </span>
             </a>
@@ -73,7 +73,7 @@ title: ალექსანდრე გიორგაძე
           <h2 class="subtitle georgian-caps">გამოცდილება</h2>
           {% for experience in site.data.ka.exp %}
             <div class="level is-marginless">
-              <p class="is-marginless" style="font-weight: 200; color: #4d4d4d;">{{ experience.company }}<br/>
+              <p class="is-marginless" style="font-weight: 400; color: #4d4d4d;">{{ experience.company }}<br/>
                 <span class="content is-marginless" style="font-size: 0.8rem; color: #4d4d4d;">{{ experience.role }}</span>
               </p>
               <p style="text-align: right; font-size: 0.8rem; color: #4d4d4d;">{{ experience.company_location }}<br/>
@@ -82,9 +82,9 @@ title: ალექსანდრე გიორგაძე
             </div>
             <ul style="margin-top: 0.2em; list-style-type: circle;">
               {% for detail in experience.details %}
-              <li class="content is-marginless" style="font-size: 0.8rem">
-                <span class="heading is-marginless" style="color: #4d4d4d;">{{ detail.title }}</span>
-                <span style="color: #4d4d4d;">{{ detail.description }}</span>
+              <li class="content is-marginless" style="font-size: 0.8rem; font-weight: 400;">
+                <span class="heading is-marginless" style="color: #4d4d4d; font-weight: 400;">{{ detail.title }}</span>
+                <span style="color: #4d4d4d; font-weight: 400;">{{ detail.description }}</span>
               </li>
               {% endfor %}
             </ul>
