@@ -1,20 +1,18 @@
 {
     "skills": {
         "Professional Skills": [
-            "C",
-            "SQL",
+            "Staff Scheduling",
+            "Data Analysis",
+            "Mathematical Modeling",
+            "Lead Generation",
+            "Quality Assurance Testing",
+            "Market Research",
+            "Salesforce CRM",
             "Excel",
             "Linux",
             "Github",
-            "Staff Scheduling",
-            "Data Analysis",
-            "Statistical Data Analysis",
-            "Mathematical Modeling",
-            "Lead Generation",
-            "Salesforce CRM",
-            "Quality Assurance Testing",
-            "Market Research"
-
+            "SQL",
+            "C"
         ],
         "Soft Skills": [
             "Time Management",
